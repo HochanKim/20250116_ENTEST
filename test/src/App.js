@@ -29,20 +29,26 @@ function App() {
 // Header
 function Header() {
   return (
-    <div className='header w-10/12 h-20 mx-auto'>
-      <div className='w-52 h-full float-left flex items-center'>
-        <img src={Logo} />
-      </div>
-      <div className='h-full font-bold uppercase float-right flex items-center'>
-        <span className='mx-3'>
-          <a href="javascript::">home</a>
-        </span>
-        <span className='mx-3'>
-          <a href="javascript::">about</a>
-        </span>
-        <span className='mx-3'>
-          <a href="javascript::">contact</a>
-        </span>
+    <div className='header w-full h-20 relative bg-white'>
+      <div className='fixed top-0 left-0 right-0 bg-white'>
+        <div className='w-10/12 h-20 mx-auto'>
+          {/* 로고 */}
+          <div className='w-52 h-full float-left'>
+            <img src={Logo} />
+          </div>
+          {/* 내비게이션 */}
+          <div className='h-full font-bold uppercase float-right flex items-center'>
+            <span className='mx-3'>
+              <a href="javascript::">home</a>
+            </span>
+            <span className='mx-3'>
+              <a href="javascript::">about</a>
+            </span>
+            <span className='mx-3'>
+              <a href="javascript::">contact</a>
+            </span>
+          </div>
+        </div>
       </div>
     </div>
   )
