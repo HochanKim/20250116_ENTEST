@@ -10,10 +10,12 @@ import img1 from './images/img1.jpg';
 import img2 from './images/img2.jpg';
 import img3 from './images/img3.jpg';
 import img4 from './images/img4.jpg';
-import leftArrow from './images/left.png';
-import rightArrow from './images/right.png';
+
+// 캐러셀, 슬라이드
+import SimpleSlider from './components/Slide.js';
 
 
+// 중심 메소드
 function App() {
   return (
     <div className="App">
@@ -29,11 +31,11 @@ function App() {
 // Header
 function Header() {
   return (
-    <div className='header w-full h-20 relative bg-white'>
-      <div className='fixed top-0 left-0 right-0 bg-white'>
+    <div className='header w-full h-20 relative bg-white z-10'>
+      <div className='h-20 fixed top-0 left-0 right-0 bg-white z-10'>
         <div className='w-10/12 h-20 mx-auto'>
           {/* 로고 */}
-          <div className='w-52 h-full float-left'>
+          <div className='w-52 h-full float-left flex items-center'>
             <img src={Logo} />
           </div>
           {/* 내비게이션 */}
@@ -57,24 +59,23 @@ function Header() {
 // Intro
 function Intro() {
   return (
-    <div className='bg-banner w-full h-screen bg-cover flex items-center'>
-      <div className='w-1/6'>
-        <img src={leftArrow} className='ml-24'/>
-      </div>
-
-      <div className='w-2/3 h-full text-white grid items-center'>
-        <div className='w-2/5'>
-          <h1 className='font-extrabold text-6xl mb-10 justify-end'>Lorem ipsum<br></br> dolor sit amet,</h1>
-          <p className='text-xl'>Lorem ipsum dolor sit amet, consectetur</p> 
-          <p className='text-xl'>sed do eiusmod tempor incididunt ut</p> 
-          <p className='text-xl'>labore et dolore magna aliqua.</p>
-        </div>
-      </div>
-
-      <div className='w-1/6'>
-        <img src={rightArrow} className='ml-24'/>
-      </div>
-    </div>
+    <SimpleSlider />
+    // <div className='bg-banner w-full h-screen bg-cover flex items-center'>
+    //   <div className='w-1/6'>
+    //     {/* <img src={leftArrow} className='ml-24'/> */}
+    //   </div>
+    //   <div className='w-2/3 h-full text-white grid items-center'>
+    //     <div className='w-2/5'>
+    //       <h1 className='font-extrabold text-6xl mb-10 justify-end'>Lorem ipsum<br></br> dolor sit amet,</h1>
+    //       <p className='text-xl'>Lorem ipsum dolor sit amet, consectetur</p> 
+    //       <p className='text-xl'>sed do eiusmod tempor incididunt ut</p> 
+    //       <p className='text-xl'>labore et dolore magna aliqua.</p>
+    //     </div>
+    //   </div>
+    //   <div className='w-1/6'>
+    //     {/* <img src={rightArrow} className='ml-24'/> */}
+    //   </div>
+    // </div>
   )
 }
 
