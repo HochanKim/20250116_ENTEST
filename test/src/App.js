@@ -60,22 +60,6 @@ function Header() {
 function Intro() {
   return (
     <SimpleSlider />
-    // <div className='bg-banner w-full h-screen bg-cover flex items-center'>
-    //   <div className='w-1/6'>
-    //     {/* <img src={leftArrow} className='ml-24'/> */}
-    //   </div>
-    //   <div className='w-2/3 h-full text-white grid items-center'>
-    //     <div className='w-2/5'>
-    //       <h1 className='font-extrabold text-6xl mb-10 justify-end'>Lorem ipsum<br></br> dolor sit amet,</h1>
-    //       <p className='text-xl'>Lorem ipsum dolor sit amet, consectetur</p> 
-    //       <p className='text-xl'>sed do eiusmod tempor incididunt ut</p> 
-    //       <p className='text-xl'>labore et dolore magna aliqua.</p>
-    //     </div>
-    //   </div>
-    //   <div className='w-1/6'>
-    //     {/* <img src={rightArrow} className='ml-24'/> */}
-    //   </div>
-    // </div>
   )
 }
 
