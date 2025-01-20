@@ -38,3 +38,9 @@
     font-weight: 100;
     src: url("./fonts/Pretendard-Thin.woff") format("woff");
 }
+
+
+/* slick */
+.slick-arrow {
+    display: none !important;
+}
